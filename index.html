@@ -10,6 +10,144 @@
 
 <body>
     <h1>Michael Gawrych</h1>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a href="#auth">Login</a></li>
+            <li style="float:right"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <form action="action_page.php" method="post">
+        <!-- <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div> -->
+        <h1>Sign In</h1>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <div></div>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <div></div>
+            <label for="psw"><b>Password</b></label>
+            <div></div>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <div> </div>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+            <span class="psw"> <a href="#">Forgot password?</a></span>
+        </div>
+    </form>
+
+    <form action="action_page.php">
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <div></div>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <div></div>
+            <label for="psw"><b>Password</b></label>
+            <div> </div>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <div></div>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <div></div>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="radio1">Female</label>
+                <input type="radio" name="radio" id="radio1">
+                <label for="radio2">Male</label>
+                <input type="radio" name="radio" id="radio2">
+            </fieldset>
+            <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+
+    <form action="#">
+        <label="userName">User Name
+            <input type="text" name="UserName" id="UserName" required />
+            </label>
+
+            <br>
+            <label="password">Password
+                <input type="password" name="password" id="password" />
+                </label>
+    </form>
+
+    <form action="#">
+        <label for="UserName">User Name</label>
+        <input type="text" name="userName" id="UserName" required><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <label for="checkbox">Checkbox1</label><input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox2">Checkbox2</label><input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox3">Checkbox3</label><input type="checkbox" name="checkbox3" id="checkbox3">
+        </fieldset><br>
+        <fieldset>
+            <legend>Radio Buttons</legend>
+            <label for="radio1">radio1</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio2">radio2</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio3">radio3</label>
+            <input type="radio" name="radio" id="radio3">
+        </fieldset>
+    </form>
+
+    <h2>The select Element</h2>
+
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="#">
+        <label>Choose a car:</label>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+
+        <input type="submit">
+    </form>
+
+    <fieldset>
+
+        <legend>Choose a car:</legend>
+  
+        <select name="cars">
+  
+          <option value="volvo">Volvo</option>
+  
+          <option value="saab">Saab</option>
+  
+          <option value="fiat" >Fiat</option>
+  
+          <option value="audi" selected >Audi</option>
+  
+        </select>
+  
+     </fieldset>
+
     <table>
         <caption>Practice Table</caption>
         <thead>
@@ -39,6 +177,54 @@
             </tr>
         </tfoot>
     </table>
+
+
+    <h1>Dylan's Code for Registration Form</h1>
+    <form action="">
+        <fieldset>
+           <h1>Register Form</h1>
+           <label>
+              First Name: <input type="text" placeholder="Enter your fist name"></label><br>
+           <label>
+              Last Name: <input type="text" placeholder="Enter your last name"></label><br>
+           <label>
+              Email: 
+              <input type="email" placeholder="Enter your email">
+           </label><br>
+           <label>
+              Password: 
+              <input type="password" placeholder="Enter your password">
+           </label><br>
+           <label>
+              Confirm Password: 
+              <input type="password" placeholder="Confirm your password">
+           </label><br>
+              Gender: 
+              <label>
+              <input type="radio" name="gender" id="male">Male
+              </label>
+              <label>
+              <input type="radio" name="gender" id="female">Female
+              </label><br>
+           <label>
+              Date of Birth: 
+              <input type="date">
+           </label><br>
+           Habits
+           <label>
+              <input type="checkbox"> You like sports
+           </label>
+           <label>
+              <input type="checkbox"> You like to eat
+           </label>
+           <label>
+              <input type="checkbox"> You like to sleep
+           </label>
+           <br>
+           <input type="submit" value="Register">
+        </fieldset>
+     </form>
+
 
 </body>
 
